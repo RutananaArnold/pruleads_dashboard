@@ -10,6 +10,9 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+   <!-- Add the favicon link -->
+   <link rel="icon" href="{{ asset('images/pruHub.jpeg') }}" type="image/x-icon">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
