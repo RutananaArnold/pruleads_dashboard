@@ -77,6 +77,21 @@
                     <input type="file" name="file">
                     <button type="submit" class="custom-button">Import Excel</button>
                 </form>
+
+                <div style="margin-top: 20px"></div>
+
+                <!-- Display session information -->
+            @if (session('newly_added_count') || session('existing_count'))
+                <div class="alert alert-info">
+                    @if (session('newly_added_count'))
+                        New People Added: {{ session('newly_added_count') }}
+                        <br>
+                    @endif
+                    @if (session('existing_count'))
+                        Existing People: {{ session('existing_count') }}
+                    @endif
+                </div>
+            @endif
             </div>
         </div>
     </section>
